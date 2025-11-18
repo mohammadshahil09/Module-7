@@ -16,9 +16,26 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 7. **Stop**
 
 ## 💻 PROGRAM:
+```python
+def fun(n):
+    if n == 0:
+        return
+    fun(n - 2)   # Head recursion (recursive call first)
+    print(n)
 
-ADD CODE HERE
+
+num = int(input("Enter a number: "))
+
+if num % 2 != 0:
+    num += 1
+
+fun(num)
+
+```
 
 ## OUTPUT
+<img width="1254" height="256" alt="image" src="https://github.com/user-attachments/assets/c49e26d9-1851-4c1a-a8c8-758fd3182596" />
+
 
 ## RESULT
+The program successfully demonstrates Head Recursion in Python. The recursive call is made at the beginning, and results are printed during the backtracking phase, generating a sequence of even numbers.
